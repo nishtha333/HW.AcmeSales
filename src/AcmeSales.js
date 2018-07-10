@@ -1,3 +1,7 @@
+/*
+Note: Prof solution uses reduce to populate the results (called memo) and return that
+*/
+
 module.exports = {
     //Go through each customer, filter the relevant details from sales and reduce them to a total amount
     generateCustomerSalesMap: (sales, customers) => {

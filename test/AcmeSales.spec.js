@@ -1,9 +1,9 @@
 const expect = require('chai').expect;
 const acmeSales = require('../src/AcmeSales');
 
-describe('Acme Sales', () => {
+describe('Acme Customer-Sales Transformation', () => {
     it('exists', () => {
-        expect(acmeSales).to.be.ok;
+        expect(acmeSales.generateCustomerSalesMap).to.be.ok;
     });
 
     it('returns empty object if the inputs are empty arrays', () => {
