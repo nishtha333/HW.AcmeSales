@@ -6,6 +6,10 @@ describe('Acme Sales', () => {
         expect(acmeSales).to.be.ok;
     });
 
+    it('returns empty object if the inputs are empty arrays', () => {
+        expect(acmeSales.generateCustomerSalesMap([], [])).to.eql({});  
+    });
+
     it('generates customer-sales map: tests for customers with no sales, single sale and multiple sales', () => {
         const sales = [ {customerId: 1, orderId: 1, total: 30}, 
                         {customerId: 2, orderId: 2, total: 45}, 
